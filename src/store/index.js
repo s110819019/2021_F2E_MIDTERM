@@ -1,6 +1,6 @@
 import { createContext } from "react";
 import useReducerWithThunk from "use-reducer-thunk";
-import allpoke from "../json/allpoke.json";
+import pokes from "../json/pokes.json";
 import {
   SET_PAGE_CONTENT,
   SET_NAVBAR_ACTIVEITEM,
@@ -10,23 +10,22 @@ import {
 } from "../utils/constants";
 
 export const StoreContext = createContext();
-let bagItems = localStorage.getItem("bagItems")
-  ? JSON.parse(localStorage.getItem("bagtItems"))
-  : [];
+// let bagItems = localStorage.getItem("bagItems")
+//   ? JSON.parse(localStorage.getItem("bagtItems"))
+//   : [];
 
 const initialState = {
   page: {
-    title: "NORDIC NEST Shopping Cart",
-    allpoke,
+    pokes,
   },
   navBar: {
     activeItem: "/",
   },
-  bagItems,
-  pokeDetail: {
-    poke: {},
-    qty: 1,
-  },
+  // bagItems,
+  // pokeDetail: {
+  //   poke: {},
+  //   qty: 1,
+  // },
 };
 
 function reducer(state, action) {
@@ -34,7 +33,9 @@ function reducer(state, action) {
     case SET_PAGE_CONTENT:
       return {
         ...state,
-        page: action.payload,
+        page: {
+          pokes: action.payload,
+        },
       };
     case SET_NAVBAR_ACTIVEITEM:
       return {
@@ -43,22 +44,22 @@ function reducer(state, action) {
           activeItem: action.payload,
         },
       };
-    case ADD_BAG_ITEM:
-      const item = action.payload;
-      const poke = state.bagItems.find((x) => x.id === item.id);
-      if (poke) {
-        bagItems = state.bagItems.map((x) =>
-          x.id === poke.id ? item : x
-        );
-        return { ...state, bagItems };
-      }
-      bagItems = [...state.bagItems, item];
-      return { ...state, bagItems };
-    case REMOVE_BAG_ITEM:
-      bagItems = state.bagItems.filter((x) => x.id !== action.payload);
-      return { ...state, bagItems };
-    case SET_POKE_DETAIL:
-      return { ...state, pokeDetail: action.payload };
+    // case ADD_BAG_ITEM:
+    //   const item = action.payload;
+    //   const poke = state.bagItems.find((x) => x.id === item.id);
+    //   if (poke) {
+    //     bagItems = state.bagItems.map((x) =>
+    //       x.id === poke.id ? item : x
+    //     );
+    //     return { ...state, bagItems };
+    //   }
+    //   bagItems = [...state.bagItems, item];
+    //   return { ...state, bagItems };
+    // case REMOVE_BAG_ITEM:
+    //   bagItems = state.bagItems.filter((x) => x.id !== action.payload);
+    //   return { ...state, bagItems };
+    // case SET_POKE_DETAIL:
+    //   return { ...state, pokeDetail: action.payload };
     default:
       return state;
   }

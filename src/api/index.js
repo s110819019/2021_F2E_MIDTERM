@@ -1,16 +1,16 @@
-import allpoke from "../json/allpoke.json";
-import kanto from "../json/kanto";
-import johto from "../json/johto";
-import hoenn from "../json/hoenn";
-import sinnoh from "../json/sinnoh";
-import unova from "../json/unova";
-import kalos from "../json/kalos";
-import galar from "../json/galar";
+import pokes from "../json/pokes.json";
+import kanto from "../json/kanto.json";
+import johto from "../json/johto.json";
+import hoenn from "../json/hoenn.json";
+import sinnoh from "../json/sinnoh.json";
+import unova from "../json/unova.json";
+import kalos from "../json/kalos.json";
+import galar from "../json/galar.json";
 
 export const getJSON = (url) => {
     switch (url) {
         case "/":
-            return allpoke;
+            return pokes;
         case "/kanto":
             return kanto;
         case "/johto":
@@ -26,6 +26,6 @@ export const getJSON = (url) => {
         case "/galar":
             return galar;
         default:
-            return allpoke;
+            return pokes;
   }
 };

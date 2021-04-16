@@ -6,7 +6,7 @@ import {
     SET_POKE_DETAIL,
   } from "../utils/constants";
   
-  import allpoke from "../json/allpoke.json";
+  import pokes from "../json/pokes.json";
   
   export const addBagItem = (dispatch, poke, qty) => {
     const item = {
@@ -46,10 +46,10 @@ import {
 //     })
 //   }
   
-  export const pageContentsSet = (dispatch, title, poke) => {
+  export const pageContentsSet = (dispatch, pokes) => {
     dispatch({
       type: SET_PAGE_CONTENT,
-      payload: { title, poke },
+      payload: pokes,
     });
   };
   

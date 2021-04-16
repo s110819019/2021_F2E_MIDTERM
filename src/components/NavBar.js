@@ -12,15 +12,15 @@ export default function NavBar() {
                 onClick={() => setIsOnTouch(!isOnTouch)}
                 isOnTouch={isOnTouch}
             />
-            <div className="navBar navBar__collapse--mobile">
-                <NavItem to="/Kanto" className="nav__item" activeClassName="nav__item--active">
+            <div className="navBar collapse__mobile">
+                <NavItem to="/kanto" className="nav__item" activeClassName="nav__item--active">
                     關都
                 </NavItem>
                 <NavItem to="/johto" className="nav__item" activeClassName="nav__item--active">
                     成都
                 </NavItem>
-                <NavItem to="/hoenn" className="nav__tem" activeClassName="nav__item--active">
-                    豐原
+                <NavItem to="/hoenn" className="nav__item" activeClassName="nav__item--active">
+                    豐緣
                 </NavItem>
                 <NavItem to="/sinnoh" className="nav__item" activeClassName="nav__item--active">
                     神奧
@@ -44,8 +44,8 @@ export default function NavBar() {
                 key={"left"}
                 width={400}
                 zIndex={99}
-                bodyStyle={{ backgroundColor: "#111828" }}
-                headerStyle={{ backgroundColor: "#111828", color: "#fff" }}
+                bodyStyle={{ backgroundColor: "#FCFAF2" }}
+                headerStyle={{ backgroundColor: "#FCFAF2", color: "#000" }}
             >
                 <NavItem onClose={handleCloseDrawer} to="/Kanto" className="nav__item" activeClassName="nav__item--active">
                     關都
@@ -53,8 +53,8 @@ export default function NavBar() {
                 <NavItem onClose={handleCloseDrawer} to="/johto" className="nav__item" activeClassName="nav__item--active">
                     成都
                 </NavItem>
-                <NavItem onClose={handleCloseDrawer} to="/hoenn" className="nav__tem" activeClassName="nav__item--active">
-                    豐原
+                <NavItem onClose={handleCloseDrawer} to="/hoenn" className="nav__item" activeClassName="nav__item--active">
+                    豐緣
                 </NavItem>
                 <NavItem onClose={handleCloseDrawer} to="/sinnoh" className="nav__item" activeClassName="nav__item--active">
                     神奧
