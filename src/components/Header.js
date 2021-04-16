@@ -23,8 +23,8 @@ export default function Header() {
                     </div>
                     {/* <PokeBag /> */}
                 </div>
-
-                <hr className="hr-header-line" />
+                
+                {/* <div className="header__hr--line" /> */}
             </header>
         </>
     );

@@ -70,7 +70,6 @@ body {
     min-height: 100vh;
     position: relative;
     background-color: #e7f0e1;
-    margin-top: 0.8rem;
 }
 
 .layout__content:before {
@@ -99,7 +98,7 @@ body {
 
 .header__wrap {
     display: flex;
-    padding-top: 1rem;
+    padding-top: 2rem;
     position: relative;
     background-color: #e7f0e1;
 }
@@ -126,9 +125,20 @@ body {
     /* line-height: 0.8; */
 }
 
+.header__hr--line {
+    background-color: #4d7072;
+    height: 0.2rem;
+    opacity: 0.2;
+}
+
 /* NavBar */
+.navBar__wrap {
+    position: relative;
+    background-color: #e7f0e1;
+}
 .navBar {
     display: flex;
+    position: relative;
     background-color: #e7f0e1;
     justify-content: space-around;
 }
@@ -136,7 +146,7 @@ body {
 .nav__item {
     color: #4d7072;
     opacity: 0.6;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     transition: opacity .25s linear;
 }
 
@@ -146,10 +156,17 @@ body {
 }
 
 .nav__item--active {
-    color: #000;
+    color: #1d8796;
     opacity: 1;
 }
 
+.navBar__hr--line {
+    background-color: #4d7072;
+    height: 0.2rem;
+    opacity: 0.2;
+}
+
+/* Drawer */
 .ant-drawer-header {
     border-bottom: none;
 }
@@ -158,9 +175,13 @@ body {
     text-align: center;
 }
 
+.ant-drawer-content {
+    text-align: center;
+}
+
 @media (max-width: 768px) {
-    .collapse__mobile {
-        transform: translateY(-100%);
+    .collapse__mobile .nav__item {
+        display: none;
     }
 }
 
@@ -198,109 +219,82 @@ body {
   
 } */
 
-/* .hr-header-line {
-    margin: 25px auto 30px;
-    padding: 0;
-    width: 100px;
-    border: 0;
-    border-top: solid 6px;
-    border-color: #6366F2;
-    border-radius: 50%;
-    opacity: 1;
-} */
-
 /* Hamburger Menu */
 .hamMenu {
     display: inline-block;
+    width: 3.2rem;
+    height: 2.8rem;
+    /* position: absolute; */
     position: relative;
-    margin-left: -4rem;
+    top: 0.4rem;
+    left: 1rem;
     z-index: 999;
-    background-color: #111828;
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: 2rem;
-    opacity: 0;
-    left: 5rem;
-    top: 2.5rem;
-    transition: all .25s linear;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+    border: 0.3rem solid #1d8796;
+    border-radius: 0.6rem;
+    cursor: pointer;
 }
 
 @media (min-width: 768px) {
     .show__mobile {
-      display: none;
+        display: none;
     }
 }
 
 .hamMenu:hover {
-    /* opacity: 1; */
     cursor: pointer;
 }
-
+span.hamMenu__bar {
+    display: inline-block;
+    position: absolute;
+    background-color: #1d8796;
+    height: 0.5rem;
+    border-radius: 0.5rem;
+    opacity: 1;
+    transition: .25s ease-in-out;
+    transform: rotate(0deg);
+}
 span.hamMenu__bar1 {
-    display: inline-block;
-    position: absolute;
-    background-color: #8183ff;
-    width: 24px;
-    height: 3px;
-    top: 0rem;
-    transition: all .05s linear;
-    transform: rotate(-4deg);
+    width: 90%;
+    top: 0.1rem;
+    left: 0.144rem;
 }
 
-span.hamMenu__bar2 {
-    display: inline-block;
-    background-color: #8183ff;
-    position: absolute;
-    width: 24px;
-    height: 3px;
-    top: 0.55rem;
-    transition: all .25s linear;
-    transform: rotate(2deg);
-}
-
+span.hamMenu__bar2,
 span.hamMenu__bar3 {
-    display: inline-block;
-    background-color: #8183ff;
-    position: absolute;
-    width: 24px;
-    height: 3px;
-    top: 1.1rem;
-    transition: all .25s linear;
-    transform: rotate(-2deg);
+    width: 90%;
+    top: 0.85rem;
+    left: 0.144rem;
+}
+
+span.hamMenu__bar4 {
+    width: 90%;
+    opacity: 1;
+    bottom: 0.1rem;
+    left: 0.144rem;
 }
 
 span.hamMenu__bar1--touch {
-    display: inline-block;
-    position: absolute;
-    background-color: #8183ff;
-    width: 30px;
-    height: 3px;
-    top: 16px;
-    opacity: 0;
-    transition: all .05s linear;
+    top: 1rem;
+    width: 0%;
+    left: 50%;
 }
 
 span.hamMenu__bar2--touch {
-    display: inline-block;
-    background-color: #8183ff;
-    position: absolute;
-    width: 30px;
-    height: 3px;
-    opacity: 1;
-    top: 0.6rem;
-    transition: all .25s linear;
     transform: rotate(45deg);
 }
 
 span.hamMenu__bar3--touch {
-    display: inline-block;
-    background-color: #8183ff;
-    position: absolute;
-    width: 30px;
-    height: 3px;
-    top: 0.6rem;
-    opacity: 1;
-    transition: all .25s linear;
     transform: rotate(-45deg);
 }
-  
+span.hamMenu__bar4--touch {
+    bottom: 1rem;
+    width: 0%;
+    left: 50%;
+}
+
+/* Card */
+.poke {
+    margin-top: 1rem;
+}

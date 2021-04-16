@@ -7,7 +7,8 @@ export default function NavBar() {
     const [isOnTouch, setIsOnTouch] = useState(false);
     const handleCloseDrawer = () => setIsOnTouch(false);
     return (
-        <div>
+        <div className="navBar__wrap">
+            <div className="navBar__hr--line" />
             <HamMenu
                 onClick={() => setIsOnTouch(!isOnTouch)}
                 isOnTouch={isOnTouch}
@@ -37,17 +38,17 @@ export default function NavBar() {
             </div>
             <Drawer
                 title=" "
-                placement={"left"}
+                placement={"top"}
                 closable={false}
                 onClose={handleCloseDrawer}
                 visible={isOnTouch}
-                key={"left"}
+                key={"top"}
                 width={400}
                 zIndex={99}
                 bodyStyle={{ backgroundColor: "#FCFAF2" }}
                 headerStyle={{ backgroundColor: "#FCFAF2", color: "#000" }}
             >
-                <NavItem onClose={handleCloseDrawer} to="/Kanto" className="nav__item" activeClassName="nav__item--active">
+                <NavItem onClose={handleCloseDrawer} to="/kanto" className="nav__item" activeClassName="nav__item--active">
                     關都
                 </NavItem>
                 <NavItem onClose={handleCloseDrawer} to="/johto" className="nav__item" activeClassName="nav__item--active">
@@ -69,6 +70,7 @@ export default function NavBar() {
                     伽勒爾
                 </NavItem>
             </Drawer>
+            <div className="navBar__hr--line" />
         </div>
     );
 }
