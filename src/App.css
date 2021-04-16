@@ -1,0 +1,111 @@
+@import '~antd/dist/antd.css';
+@font-face {
+    font-family: FakePearl-Regular;
+    src: url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff2) format("woff2")
+    , url(https://cdn.jsdelivr.net/gh/max32002/FakePearl@1.1/webfont/FakePearl-Regular.woff) format("woff");
+}
+/* RWD Container */
+.container {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    margin: auto;
+}
+
+/* sm */
+@media (min-width: 576px) { 
+    .container {
+        width: 540px;
+    }
+} 
+
+/* md */
+@media (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+} 
+
+/* lg */
+@media (min-width: 992px) {
+    .container {
+        width: 960px;
+    }
+} 
+
+/* xl */
+@media (min-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+} 
+
+/* xxl */
+@media (min-width: 1600px) {
+    .container {
+        width: 1500px;
+    }
+}
+
+/* General */
+html,
+body {
+    font-size: 62.5%;
+    font-family: FakePearl-Regular;
+    line-height: 1.6;
+    background-image: url(./img/container__bg.png);
+}
+
+.layout__main {
+
+}
+
+.layout__content {
+    min-height: 100vh;
+    background-image: url(./img/body__bg.png);
+}
+
+.layout__header,
+.layout__footer {
+    padding: 0;
+    height: auto;
+    line-height: 1.6;
+}
+
+/* Header */
+.header {
+    text-align: center;
+}
+  
+.header__wrap {
+    display: flex;
+    padding-top: 2rem;
+    position: relative;
+}
+  
+  
+.header__text {
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+.header__title {
+    color: white;
+    font-size: 3.6rem;
+    padding: 0;
+    cursor: pointer;
+}
+  
+.header__slogan {
+    color: white;
+    opacity: 0.6;
+    padding: 0;
+    margin: 0;
+    line-height: 0.8;
+}
+
+/* NavBar */
+.navBar {
+    display: flex;
+    justify-content: space-around;
+}
