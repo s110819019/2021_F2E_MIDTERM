@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect} from "react";
 import { Drawer } from "antd";
 import NavItem from "./NavItem";
 import HamMenu from "./HamMenu";
@@ -6,8 +6,24 @@ import HamMenu from "./HamMenu";
 export default function NavBar() {
     const [isOnTouch, setIsOnTouch] = useState(false);
     const handleCloseDrawer = () => setIsOnTouch(false);
+
+    useEffect(() => {
+        const myNav = document.getElementById("myNav");
+        const sticky = myNav.offsetTop;
+        const scrollCallBack = window.addEventListener("scroll", () => {
+            if (window.pageYOffset > sticky) {
+                myNav.classList.add("sticky");
+            } else {
+                myNav.classList.remove("sticky");
+            }
+        });
+        return () => {
+            window.removeEventListener("scroll", scrollCallBack);
+        };
+    }, []);
+
     return (
-        <div className="navBar__wrap">
+        <div className="navBar__wrap" id="myNav">
             <div className="navBar__hr--line" />
             <HamMenu
                 onClick={() => setIsOnTouch(!isOnTouch)}

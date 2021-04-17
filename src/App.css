@@ -55,10 +55,11 @@ body {
     line-height: 1.6;
     background-image: url(./img/body__bg.png);
     background-attachment: fixed;
+    background-color: #e7f0e1;
 }
 
 .layout__main {
-
+    background-color: #e7f0e1;
 }
 
 /* .layout__content {
@@ -70,6 +71,7 @@ body {
     min-height: 100vh;
     position: relative;
     background-color: #e7f0e1;
+    top: 2rem;
 }
 
 .layout__content:before {
@@ -164,6 +166,17 @@ body {
     background-color: #4d7072;
     height: 0.2rem;
     opacity: 0.2;
+    width: 90%;
+    margin-left: 5%;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 666;
+    box-shadow:0px 12px 8px -12px #000;
 }
 
 /* Drawer */
@@ -295,6 +308,106 @@ span.hamMenu__bar4--touch {
 }
 
 /* Card */
-.poke {
-    margin-top: 1rem;
+.poke__card {
+    border-radius: 2rem;
+    background-color: #fafafa;
+}
+
+.pokeCard__img {
+    display: block;
+    margin: auto;
+}
+
+.pokeType__wrap {
+    display: flex;
+    align-items: center;
+}
+
+.poke__type {
+    color: #fff;
+    text-align: center;
+    width: 6rem;
+    height: 2rem;
+    line-height: 2rem;
+    border-radius: 1rem;
+}
+
+.poke__type2 {
+    margin-left: 0.5rem;
+}
+
+.noneType {
+    display: none;
+}
+
+.grassType {
+    background-color: #5cbf69;
+}
+
+.poisonType {
+    background-color: #b763ce;
+}
+
+.psychicType {
+    background-color: #fb8a88;
+}
+
+.fireType {
+    background-color: #ffa54e;
+}
+
+.iceType {
+    background-color: #84d5cc;
+}
+
+.groundType {
+    background-color: #d68858;
+}
+
+.bugType {
+    background-color: #9dc430;
+}
+
+.fairyType {
+    background-color: #f098e5;
+}
+
+.rockType {
+    background-color: #cec28f;
+}
+
+.steelType {
+    background-color: #5498a4;
+}
+
+.darkType {
+    background-color: #666675;
+}
+
+.electricType {
+    background-color: #f7da58;
+}
+
+.normalType {
+    background-color: #9da0a0;
+}
+
+.waterType {
+    background-color: #61abdd;
+}
+
+.flyingType {
+    background-color: #9bb4e6;
+}
+
+.dragonType {
+    background-color: #0876bd;
+}
+
+.ghostType {
+    background-color: #666ec2;
+}
+
+.fightingType {
+    background-color: #d4465a;
 }

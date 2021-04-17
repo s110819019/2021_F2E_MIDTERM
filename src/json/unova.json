@@ -1,8 +1,12 @@
 [
     {
         "id": "494",
-        "area": "unova",
+        "area": "合眾",
         "name": "比克提尼",
-        "image": "https://www.nordicnest.com/4ae6b2/globalassets/product-pictures/satake/33932-01-02.jpg?quality=80&format=webp&width=740"
+        "type1": "超能力",
+        "type1__class": "psychicType",
+        "type2": "火",
+        "type2__class": "fireType",
+        "image": "https://godex.site/imgs/pokemon/494.png"
     }
 ]

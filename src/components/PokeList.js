@@ -3,13 +3,14 @@ import PokeItem from "./PokeItem";
 
 export default function PokeList({pokes}) {
     return (
-        <Row gutter={[32, 32]}>
+        <Row gutter={[32, 32]} justify="space-around">
             {pokes.map(poke => (
                 <Col 
-                    key={poke.id} 
-                    lg={{ span: 12 }} 
-                    xl={{ span: 8 }}
-                    xxl={{ span: 6 }}
+                    key={poke.id}
+                    sm={{ span: 12 }}
+                    lg={{ span: 8 }} 
+                    xl={{ span: 6 }}
+                    xxl={{ span: 4 }}
                 >
                     <PokeItem poke={poke}/>
                 </Col>

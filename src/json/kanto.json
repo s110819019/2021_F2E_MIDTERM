@@ -1,8 +1,152 @@
 [
     {
         "id": "1",
-        "area": "kanto",
+        "area": "關都",
         "name": "妙蛙種子",
-        "image": "https://www.nordicnest.com/4ae6b2/globalassets/product-pictures/satake/33932-01-02.jpg?quality=80&format=webp&width=740"
+        "type1": "草",
+        "type1__class": "grassType",
+        "type2": "毒",
+        "type2__class": "poisonType",
+        "image": "https://godex.site/imgs/pokemon/001.png"
+    },
+    {
+        "id": "2",
+        "area": "關都",
+        "name": "妙蛙草",
+        "type1": "草",
+        "type1__class": "grassType",
+        "type2": "毒",
+        "type2__class": "poisonType",
+        "image": "https://godex.site/imgs/pokemon/002.png"
+    },
+    {
+        "id": "3",
+        "area": "關都",
+        "name": "妙蛙花",
+        "type1": "草",
+        "type1__class": "grassType",
+        "type2": "毒",
+        "type2__class": "poisonType",
+        "image": "https://godex.site/imgs/pokemon/003.png"
+    },
+    {
+        "id": "4",
+        "area": "關都",
+        "name": "小火龍",
+        "type1": "火",
+        "type1__class": "fireType",
+        "type2": "",
+        "type2__class": "noneType",
+        "image": "https://godex.site/imgs/pokemon/004.png"
+    },
+    {
+        "id": "5",
+        "area": "關都",
+        "name": "火恐龍",
+        "type1": "火",
+        "type1__class": "fireType",
+        "type2": "",
+        "type2__class": "noneType",
+        "image": "https://godex.site/imgs/pokemon/005.png"
+    },
+    {
+        "id": "6",
+        "area": "關都",
+        "name": "噴火龍",
+        "type1": "火",
+        "type1__class": "fireType",
+        "type2": "飛行",
+        "type2__class": "flyingType",
+        "image": "https://godex.site/imgs/pokemon/006.png"
+    },
+    {
+        "id": "7",
+        "area": "關都",
+        "name": "傑尼龜",
+        "type1": "水",
+        "type1__class": "waterType",
+        "type2": "",
+        "type2__class": "noneType",
+        "image": "https://godex.site/imgs/pokemon/007.png"
+    },
+    {
+        "id": "8",
+        "area": "關都",
+        "name": "卡咪龜",
+        "type1": "水",
+        "type1__class": "waterType",
+        "type2": "",
+        "type2__class": "noneType",
+        "image": "https://godex.site/imgs/pokemon/008.png"
+    },
+    {
+        "id": "9",
+        "area": "關都",
+        "name": "水箭龜",
+        "type1": "水",
+        "type1__class": "waterType",
+        "type2": "",
+        "type2__class": "noneType",
+        "image": "https://godex.site/imgs/pokemon/009.png"
+    },
+    {
+        "id": "10",
+        "area": "關都",
+        "name": "綠毛蟲",
+        "type1": "蟲",
+        "type1__class": "bugType",
+        "type2": "",
+        "type2__class": "noneType",
+        "image": "https://godex.site/imgs/pokemon/010.png"
+    },
+    {
+        "id": "11",
+        "area": "關都",
+        "name": "鐵甲蛹",
+        "type1": "蟲",
+        "type1__class": "bugType",
+        "type2": "",
+        "type2__class": "noneType",
+        "image": "https://godex.site/imgs/pokemon/011.png"
+    },
+    {
+        "id": "12",
+        "area": "關都",
+        "name": "巴大蝶",
+        "type1": "蟲",
+        "type1__class": "bugType",
+        "type2": "",
+        "type2__class": "noneType",
+        "image": "https://godex.site/imgs/pokemon/012.png"
+    },
+    {
+        "id": "13",
+        "area": "關都",
+        "name": "獨角蟲",
+        "type1": "蟲",
+        "type1__class": "bugType",
+        "type2": "毒",
+        "type2__class": "poisonType",
+        "image": "https://godex.site/imgs/pokemon/013.png"
+    },
+    {
+        "id": "14",
+        "area": "關都",
+        "name": "鐵殼蛹",
+        "type1": "蟲",
+        "type1__class": "bugType",
+        "type2": "毒",
+        "type2__class": "poisonType",
+        "image": "https://godex.site/imgs/pokemon/014.png"
+    },
+    {
+        "id": "15",
+        "area": "關都",
+        "name": "大針鋒",
+        "type1": "蟲",
+        "type1__class": "bugType",
+        "type2": "毒",
+        "type2__class": "poisonType",
+        "image": "https://godex.site/imgs/pokemon/015.png"
     }
 ]
