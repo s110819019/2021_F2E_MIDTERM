@@ -1,6 +1,7 @@
 [
     {
-        "id": "1",
+        "id": "bulbasaur",
+        "no": "1",
         "area": "關都",
         "name": "妙蛙種子",
         "type1": "草",
@@ -10,7 +11,162 @@
         "image": "https://godex.site/imgs/pokemon/001.png"
     },
     {
-        "id": "152",
+        "id": "ivysaur",
+        "no": "2",
+        "area": "關都",
+        "name": "妙蛙草",
+        "type1": "草",
+        "type1__class": "grassType",
+        "type2": "毒",
+        "type2__class": "poisonType",
+        "image": "https://godex.site/imgs/pokemon/002.png"
+    },
+    {
+        "id": "venusaur",
+        "no": "3",
+        "area": "關都",
+        "name": "妙蛙花",
+        "type1": "草",
+        "type1__class": "grassType",
+        "type2": "毒",
+        "type2__class": "poisonType",
+        "image": "https://godex.site/imgs/pokemon/003.png"
+    },
+    {
+        "id": "charmander",
+        "no": "4",
+        "area": "關都",
+        "name": "小火龍",
+        "type1": "火",
+        "type1__class": "fireType",
+        "type2": "",
+        "type2__class": "noneType",
+        "image": "https://godex.site/imgs/pokemon/004.png"
+    },
+    {
+        "id": "charmeleon",
+        "no": "5",
+        "area": "關都",
+        "name": "火恐龍",
+        "type1": "火",
+        "type1__class": "fireType",
+        "type2": "",
+        "type2__class": "noneType",
+        "image": "https://godex.site/imgs/pokemon/005.png"
+    },
+    {
+        "id": "charizard",
+        "no": "6",
+        "area": "關都",
+        "name": "噴火龍",
+        "type1": "火",
+        "type1__class": "fireType",
+        "type2": "飛行",
+        "type2__class": "flyingType",
+        "image": "https://godex.site/imgs/pokemon/006.png"
+    },
+    {
+        "id": "squirtle",
+        "no": "7",
+        "area": "關都",
+        "name": "傑尼龜",
+        "type1": "水",
+        "type1__class": "waterType",
+        "type2": "",
+        "type2__class": "noneType",
+        "image": "https://godex.site/imgs/pokemon/007.png"
+    },
+    {
+        "id": "wartortle",
+        "no": "8",
+        "area": "關都",
+        "name": "卡咪龜",
+        "type1": "水",
+        "type1__class": "waterType",
+        "type2": "",
+        "type2__class": "noneType",
+        "image": "https://godex.site/imgs/pokemon/008.png"
+    },
+    {
+        "id": "blastoise",
+        "no": "9",
+        "area": "關都",
+        "name": "水箭龜",
+        "type1": "水",
+        "type1__class": "waterType",
+        "type2": "",
+        "type2__class": "noneType",
+        "image": "https://godex.site/imgs/pokemon/009.png"
+    },
+    {
+        "id": "caterpie",
+        "no": "10",
+        "area": "關都",
+        "name": "綠毛蟲",
+        "type1": "蟲",
+        "type1__class": "bugType",
+        "type2": "",
+        "type2__class": "noneType",
+        "image": "https://godex.site/imgs/pokemon/010.png"
+    },
+    {
+        "id": "metapod",
+        "no": "11",
+        "area": "關都",
+        "name": "鐵甲蛹",
+        "type1": "蟲",
+        "type1__class": "bugType",
+        "type2": "",
+        "type2__class": "noneType",
+        "image": "https://godex.site/imgs/pokemon/011.png"
+    },
+    {
+        "id": "butterfree",
+        "no": "12",
+        "area": "關都",
+        "name": "巴大蝶",
+        "type1": "蟲",
+        "type1__class": "bugType",
+        "type2": "",
+        "type2__class": "noneType",
+        "image": "https://godex.site/imgs/pokemon/012.png"
+    },
+    {
+        "id": "weedle",
+        "no": "13",
+        "area": "關都",
+        "name": "獨角蟲",
+        "type1": "蟲",
+        "type1__class": "bugType",
+        "type2": "毒",
+        "type2__class": "poisonType",
+        "image": "https://godex.site/imgs/pokemon/013.png"
+    },
+    {
+        "id": "kakuna",
+        "no": "14",
+        "area": "關都",
+        "name": "鐵殼蛹",
+        "type1": "蟲",
+        "type1__class": "bugType",
+        "type2": "毒",
+        "type2__class": "poisonType",
+        "image": "https://godex.site/imgs/pokemon/014.png"
+    },
+    {
+        "id": "beedrill",
+        "no": "15",
+        "area": "關都",
+        "name": "大針鋒",
+        "type1": "蟲",
+        "type1__class": "bugType",
+        "type2": "毒",
+        "type2__class": "poisonType",
+        "image": "https://godex.site/imgs/pokemon/015.png"
+    },
+    {
+        "id": "chikorita",
+        "no": "152",
         "area": "成都",
         "name": "菊草葉",
         "type1": "草",
@@ -20,7 +176,8 @@
         "image": "https://godex.site/imgs/pokemon/152.png"
     },
     {
-        "id": "252",
+        "id": "treecko",
+        "no": "252",
         "area": "豐緣",
         "name": "木守宮",
         "type1": "草",
@@ -30,7 +187,8 @@
         "image": "https://godex.site/imgs/pokemon/252.png"
     },
     {
-        "id": "387",
+        "id": "turtwig",
+        "no": "387",
         "area": "神奧",
         "name": "草苗龜",
         "type1": "草",
@@ -40,7 +198,8 @@
         "image": "https://godex.site/imgs/pokemon/387.png"
     },
     {
-        "id": "494",
+        "id": "victini",
+        "no": "494",
         "area": "合眾",
         "name": "比克提尼",
         "type1": "超能力",
@@ -50,7 +209,8 @@
         "image": "https://godex.site/imgs/pokemon/494.png"
     },
     {
-        "id": "650",
+        "id": "chespin",
+        "no": "650",
         "area": "卡洛斯",
         "name": "哈力栗",
         "type1": "草",
@@ -60,7 +220,8 @@
         "image": "https://godex.site/imgs/pokemon/650-m.png"
     },
     {
-        "id": "810",
+        "id": "grookey",
+        "no": "810",
         "area": "伽勒爾",
         "name": "敲音猴",
         "type1": "草",

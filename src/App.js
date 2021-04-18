@@ -9,13 +9,12 @@ function App() {
         <StoreProvider>
             <BrowserRouter>
                 <Switch>
-                    <Route exact path="/" component={Home}/>
-                    <Route exact path="/:pageName" component={Home} />
-                    <Route path="/poke/:poketId" component={Poke} />
+                    <Route exact path="/" component={ Home }/>
+                    <Route exact path="/:pageName" component={ Home } />
+                    <Route path="/poke/:pokeId" component={ Poke } />
                 </Switch>
             </BrowserRouter>
         </StoreProvider>
-
     );
 }
 

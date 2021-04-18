@@ -29,22 +29,15 @@ import {
   };
   
   
-//   export const setPokeDetail = (dispatch, pokeId, qty) => {
-//     const poke = allpoke.find(
-//       x => x.id === pokeId
-//     );
-    
-//     if(qty === 0 && product.countInStock > 0)
-//         qty = 1;
-  
-//     dispatch({
-//       type: SET_PRODUCT_DETAIL,
-//       payload: {
-//         product,
-//         qty,
-//       }
-//     })
-//   }
+  export const setPokeDetail = (dispatch, pokeId) => {
+    const poke = pokes.find(
+      x => x.id === pokeId
+    );
+    dispatch({
+      type: SET_POKE_DETAIL,
+      payload: poke,
+    });
+  };
   
   export const pageContentsSet = (dispatch, pokes) => {
     dispatch({

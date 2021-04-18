@@ -14,7 +14,7 @@ export default function PokeItem({ poke }) {
             </Link>
             <div className="poke__info">
                 <h6 className="poke__id">
-                    #{poke.id}
+                    #{poke.no}
                 </h6>
                 <h2 className="poke__name">
                     {poke.name}

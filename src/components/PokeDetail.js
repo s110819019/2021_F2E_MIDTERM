@@ -3,31 +3,30 @@ import { Row, Col } from "antd";
 import { Select } from 'antd';
 // import AddToBag from "./AddToBag"
 import { StoreContext } from "../store"
-// import { setPokeDetail } from "../actions";
+import { setPokeDetail } from "../actions";
 
 const { Option } = Select;
 
 function PokeDetail() {
-   const { state: { pokeDetail: { poke, qty} }, dispatch } = useContext(StoreContext);
+   const { state: { pokeDetail: { poke } }, dispatch } = useContext(StoreContext);
 
    return (
       <Row gutter={[32, 32]}>
          <Col
             lg={{ span: 10, offset: 1 }}
          >
-            <img
-               alt=""
-               className="poke__image"
-               src={poke.image}
+            <img className="poke__image"
+					alt=""
+					src={ poke.image }
             />
          </Col>
          <Col
             lg={{ span: 12 }}
          >
             <div className="poke__info--detail">
-               <h2 className="poke__area">
-                  {poke.area}
-               </h2>
+               	<h2 className="poke__area">
+                  	{poke.area}
+              	</h2>
                <h1 className="poke__name poke__name--large">
                   {poke.name}
                </h1>

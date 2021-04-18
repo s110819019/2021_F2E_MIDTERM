@@ -21,11 +21,9 @@ const initialState = {
   navBar: {
     activeItem: "/",
   },
-  // bagItems,
-  // pokeDetail: {
-  //   poke: {},
-  //   qty: 1,
-  // },
+  pokeDetail: {
+    poke: {},
+  },
 };
 
 function reducer(state, action) {
@@ -44,22 +42,13 @@ function reducer(state, action) {
           activeItem: action.payload,
         },
       };
-    // case ADD_BAG_ITEM:
-    //   const item = action.payload;
-    //   const poke = state.bagItems.find((x) => x.id === item.id);
-    //   if (poke) {
-    //     bagItems = state.bagItems.map((x) =>
-    //       x.id === poke.id ? item : x
-    //     );
-    //     return { ...state, bagItems };
-    //   }
-    //   bagItems = [...state.bagItems, item];
-    //   return { ...state, bagItems };
-    // case REMOVE_BAG_ITEM:
-    //   bagItems = state.bagItems.filter((x) => x.id !== action.payload);
-    //   return { ...state, bagItems };
-    // case SET_POKE_DETAIL:
-    //   return { ...state, pokeDetail: action.payload };
+    case SET_POKE_DETAIL:
+      return {
+        ...state,
+        pokeDetail: {
+          poke: action.payload,
+        },
+      };
     default:
       return state;
   }
