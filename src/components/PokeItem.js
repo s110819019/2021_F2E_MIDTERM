@@ -12,18 +12,18 @@ export default function PokeItem({ poke }) {
                     src={poke.image}
                     alt={poke.name} />
             </Link>
-            <div className="poke__info">
-                <h6 className="poke__id">
+            <div className="pokeItem__info">
+                <h6 className="pokeItem__no">
                     #{poke.no}
                 </h6>
-                <h2 className="poke__name">
+                <h2 className="pokeItem__name">
                     {poke.name}
                 </h2>
-                <div className="pokeType__wrap">
-                    <div className={`poke__type ${poke.type1__class}`}>
+                <div className="pokeItem__type-wrap">
+                    <div className={`pokeItem__type ${poke.type1__class}`}>
                         {poke.type1}
                     </div>
-                    <div className={`poke__type  poke__type2 ${poke.type2__class}`}>
+                    <div className={`pokeItem__type  pokeItem__type2 ${poke.type2__class}`}>
                         {poke.type2}
                     </div>
                 </div>

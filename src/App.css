@@ -53,7 +53,7 @@ body {
     font-size: 62.5%;
     font-family: FakePearl-Regular;
     line-height: 1.6;
-    background-image: url(./img/body__bg.png);
+    background-image: url(./img/body__bg2.png);
     background-attachment: fixed;
     background-color: #e7f0e1;
 }
@@ -199,40 +199,6 @@ body {
     }
 }
 
-/* @media (max-width: 768px) {
-    .collapse__mobile {
-        transform: translateX(-100%);
-    }
-
-    .navBar {
-        background-color: #111828;
-        position: absolute;
-        z-index: 99;
-        width: 80%;
-        flex-wrap: wrap;
-    }
-
-    .nav__item {
-        font-size: 1.2em;
-        margin: 2rem auto;
-        width: 50%;
-    }
-
-    .collapse__mobile__wrap {
-        display: none;
-    }
-
-    .navBar__wrap {
-        background-color: #000;
-        opacity: 0.6;
-        width: 100vw;
-        height: 100vh;
-        position: absolute;
-        z-index: 1;
-    }
-  
-} */
-
 /* Hamburger Menu */
 .hamMenu {
     display: inline-block;
@@ -308,7 +274,7 @@ span.hamMenu__bar4--touch {
     left: 50%;
 }
 
-/* Card */
+/* Card and PokeItem-component*/
 .poke__card {
     border-radius: 2rem;
     background-color: #fafafa;
@@ -319,12 +285,21 @@ span.hamMenu__bar4--touch {
     margin: auto;
 }
 
-.pokeType__wrap {
+.pokeItem__name {
+    color: #1d8796;
+}
+
+.pokeItem__no {
+    color: #4d7072;
+    opacity: 0.6;
+}
+
+.pokeItem__type-wrap {
     display: flex;
     align-items: center;
 }
 
-.poke__type {
+.pokeItem__type {
     color: #fff;
     text-align: center;
     width: 6rem;
@@ -333,7 +308,7 @@ span.hamMenu__bar4--touch {
     border-radius: 1rem;
 }
 
-.poke__type2 {
+.pokeItem__type2 {
     margin-left: 0.5rem;
 }
 
@@ -411,4 +386,48 @@ span.hamMenu__bar4--touch {
 
 .fightingType {
     background-color: #d4465a;
+}
+
+/* PokeDetail-component */
+.pokeDetail__wrap {
+    margin-top: 2rem;
+}
+
+.pokeDetail__name {
+    font-size: 3.6rem;
+    color: #1d8796;
+}
+
+.pokeDetail__category {
+    font-size: 2.4rem;
+    color: #4d7072;
+}
+
+.pokeDetail__type-wrap {
+    display: flex;
+    align-items: center;
+}
+
+.pokeDetail__type-title {
+    font-size: 2.4rem;
+    color: #4d7072;
+}
+
+.pokeDetail__type {
+    font-size: 2.4rem;
+    color: #fafafa;
+    text-align: center;
+    width: 12rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 3rem;
+}
+
+.pokeDetail__type2 {
+    margin-left: 1rem;
+}
+
+.pokeDetail__about {
+    font-size: 2.4rem;
+    color: #4d7072;
 }
