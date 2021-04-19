@@ -16,9 +16,11 @@ export default function PokeItem({ poke }) {
                 <h6 className="pokeItem__no">
                     #{poke.no}
                 </h6>
-                <h2 className="pokeItem__name">
-                    {poke.name}
-                </h2>
+                <Link to={`/poke/${poke.id}`}>
+                    <h2 className="pokeItem__name">
+                        {poke.name}
+                    </h2>
+                </Link>
                 <div className="pokeItem__type-wrap">
                     <div className={`pokeItem__type ${poke.type1__class}`}>
                         {poke.type1}

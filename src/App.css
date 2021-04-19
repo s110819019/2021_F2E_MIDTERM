@@ -277,7 +277,12 @@ span.hamMenu__bar4--touch {
 /* Card and PokeItem-component*/
 .poke__card {
     border-radius: 2rem;
-    background-color: #fafafa;
+    background-color: #f2f2f2;
+    transition: background-color .25s linear;
+}
+
+.poke__card:hover {
+    background-color: #e6e6e6;
 }
 
 .pokeCard__img {

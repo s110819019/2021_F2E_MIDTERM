@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { StoreContext } from "../store";
-// import PokeBag from "./PokeBag";
+import BagSummary from "./BagSummary";
 import { pageContentsSet, activeNavItemSet } from "../actions";
 import { getJSON } from "../api";
 
@@ -21,10 +21,8 @@ export default function Header() {
                     </Link>
                     <p className="header__slogan">圖鑑</p>
                     </div>
-                    {/* <PokeBag /> */}
+                    <BagSummary />
                 </div>
-                
-                {/* <div className="header__hr--line" /> */}
             </header>
         </>
     );

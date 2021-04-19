@@ -29,13 +29,15 @@ import {
   };
   
   
-  export const setPokeDetail = (dispatch, pokeId) => {
+  export const setPokeDetail = (dispatch, pokeId, qty) => {
     const poke = pokes.find(
       x => x.id === pokeId
     );
+    if ( qty === 0 )
+      qty = 1;
     dispatch({
       type: SET_POKE_DETAIL,
-      payload: poke,
+      payload: { poke, qty},
     });
   };
   

@@ -22,7 +22,7 @@ export default function NavItem(props) {
                     ${state.navBar.activeItem === to ? activeClassName : ""}`
                 }
             >
-            {children}
+                {children}
             </div>
         </Link>
     );
