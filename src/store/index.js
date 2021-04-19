@@ -7,11 +7,16 @@ import {
   	ADD_BAG_ITEM,
   	REMOVE_BAG_ITEM,
   	SET_POKE_DETAIL,
+	SET_POKE_SHINY,
 } from "../utils/constants";
 
 export const StoreContext = createContext();
 let bagItems = localStorage.getItem("bagItems")
   	? JSON.parse(localStorage.getItem("bagItems"))
+  	: [];
+
+let sortBagItems = localStorage.getItem("sortBagItems")
+  	? JSON.parse(localStorage.getItem("sortBagItems"))
   	: [];
 
 const initialState = {
@@ -25,7 +30,11 @@ const initialState = {
     	poke: {},
 		qty: 1,
   	},
+	pokeIsShiny: {
+		shiny: "notshiny",
+	},
   	bagItems,
+	sortBagItems,
 };
 
 function reducer(state, action) {
@@ -49,20 +58,35 @@ function reducer(state, action) {
 				...state,
 				pokeDetail: action.payload,
 			};
+		case SET_POKE_SHINY:
+			return {
+				...state,
+				pokeIsShiny: {
+					shiny: action.payload,
+				},
+			};
 		case ADD_BAG_ITEM:
 			const item = action.payload;
-			const poke = state.bagItems.find((x) => x.id === item.id);
-			if (poke) {
-				bagItems = state.bagItems.map((x) =>
-					x.id === poke.id ? item : x
-				);
-				return { ...state, bagItems };
+			// const poke = state.bagItems.find((x) => x.id === item.id);
+			// if (poke) {
+			// 	bagItems = state.bagItems.map((x) =>
+			// 		x.id === poke.id ? item : x
+			// 	);
+			// 	return { ...state, bagItems };
+			// }
+			for (var i = 1 ; i <= item.qty ; i++){
+				bagItems = [...state.bagItems, item];
 			}
-			bagItems = [...state.bagItems, item];
+			// bagItems = [...state.bagItems, item];
 			return { ...state, bagItems };
 		case REMOVE_BAG_ITEM:
-			bagItems = state.bagItems.filter((x) => x.id !== action.payload);
-			return { ...state, bagItems };
+			const removedItem = action.payload;
+			const poke = state.bagItems.find((x) => x.id === removedItem.id && x.shiny === removedItem.shiny)
+			// const removedItemIndex = state.bagItems.indexOf((x) => x.id === removedItem.id  && x.shiny === removedItem.shiny);
+			const removedItemIndex = state.bagItems.indexOf(poke);
+			const newBagItems = state.bagItems.splice(removedItemIndex,1);
+			// bagItems = state.bagItems.filter((x) => x.id !== action.payload);
+			return { ...state, newBagItems };
     	default:
       		return state;
   	}

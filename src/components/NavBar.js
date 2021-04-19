@@ -2,6 +2,7 @@ import { useState, useEffect} from "react";
 import { Drawer } from "antd";
 import NavItem from "./NavItem";
 import HamMenu from "./HamMenu";
+import BagSummary from "./BagSummary"
 
 export default function NavBar() {
     const [isOnTouch, setIsOnTouch] = useState(false);

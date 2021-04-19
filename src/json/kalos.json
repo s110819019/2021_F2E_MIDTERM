@@ -8,6 +8,10 @@
         "type1__class": "grassType",
         "type2": "",
         "type2__class": "noneType",
-        "image": "https://godex.site/imgs/pokemon/650-m.png"
+        "image": "https://godex.site/imgs/pokemon/650-m.png",
+        "shinyimage":"https://images.gameinfo.io/pokemon/256/650-00-shiny.webp",
+        "category": "刺栗寶可夢",
+        "about": "頭上的刺平時很柔軟，一旦集中力量就會變得尖銳，硬度足以刺穿岩石。",
+        "countInStock": 9
     }
 ]

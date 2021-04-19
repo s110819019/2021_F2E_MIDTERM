@@ -8,6 +8,10 @@
         "type1__class": "grassType",
         "type2": "",
         "type2__class": "noneType",
-        "image": "https://godex.site/imgs/pokemon/152.png"
+        "image": "https://godex.site/imgs/pokemon/152.png",
+        "shinyimage":"https://godex.site/imgs/pokemon/shiny152-m.png",
+        "category": "葉子寶可夢",
+        "about": "雖然會揮舞葉子威嚇對手，但因為葉子上會飄散出甜甜的香氣，所以雙方都會變得心平氣和下來。",
+        "countInStock": 9
     }
 ]

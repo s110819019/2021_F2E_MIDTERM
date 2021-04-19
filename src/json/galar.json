@@ -8,6 +8,10 @@
         "type1__class": "grassType",
         "type2": "",
         "type2__class": "noneType",
-        "image": "https://godex.site/imgs/pokemon/201-qm.png"
+        "image": "https://godex.site/imgs/pokemon/201-qm.png",
+        "shinyimage":"",
+        "category": "小猴寶可夢",
+        "about": "頭上的刺平時很柔軟，一旦集中力量就會變得尖銳，硬度足以刺穿岩石。",
+        "countInStock": 9
     }
 ]

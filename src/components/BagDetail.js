@@ -1,80 +1,76 @@
-import { Modal, Button, Select } from "antd";
+import { Modal, Button, Select, Row, Col, Card } from "antd";
 import { useEffect, useContext } from "react";
 import { Link } from "react-router-dom";
 import { StoreContext } from "../store"
 import { BagIcon } from "./Icons";
-import { addBagItem, removeBagItem, setPokeDetail } from "../actions";
-const { Option } = Select;
+import {removeBagItem, setPokeDetail } from "../actions";
 
 export default function CartModal() {
-   const { state: { bagItems }, dispatch } = useContext(StoreContext);
-   // const handleCancel = () => toggleModal(!isModalVisible);
-   // const getTotalPrice = () => {
-   //    return (bagItems.length > 0) ?
-   //       bagItems.reduce((sum, item) => sum + item.price * item.qty, 0)
-   //       : 0;
-   // }
+   	const { state: { bagItems, pokeDetail: { qty } }, dispatch } = useContext(StoreContext);
 
-   useEffect(() => {
-      localStorage.setItem("bagItems", JSON.stringify(bagItems));
-   }, [bagItems])
 
-   return (
-      <>
-         {bagItems.length === 0 ? (
-            <div>Bag is empty</div>
-         ) : (
-            bagItems.map(item => (
-               <li key={item.id} className="cart-item">
-                  <Link to={`/poke/${item.id}`}>
-                     <div className="cart-image" onClick={()=>{
-                        setPokeDetail(dispatch, item.id, item.qty);
-                        // handleCancel();
-                     }}>
-                        <img src={item.image} alt={item.name} />
-                     </div>
-                  </Link>
-                  <div className="cart-item-content">
-                     <div className="cart-name">{item.name}</div>
-                     <div className="product-qty">
-                        Qty: {"   "}
-                        {/* <Select
-                           defaultValue={item.qty}
-                           value={item.qty}
-                           className="select-style"
-                           onChange={(qty) => addCartItem(dispatch, item, qty)}
-                        >
-                           {[...Array(item.countInStock).keys()].map((x) => (
-                              <Option key={x + 1} value={x + 1}>
-                                 {x + 1}
-                              </Option>
-                           ))}
-                        </Select> */}
-                     </div>
-                  </div>
-                  <div className="cart-item-end">
-                     {/* <div className="cart-price">
-                        ${item.price * item.qty}
-                     </div> */}
-                     <div className="cart-item-delete" onClick={() => removeBagItem(dispatch, item.id)}>
-                        x
-                     </div>
-                  </div>
+   	useEffect(() => {
+      	localStorage.setItem("bagItems", JSON.stringify(bagItems));
+   	}, [bagItems])
 
-               </li>
-            ))
-         )}
-         {/* <div className="cart-total-price-wrap">
-            Total
-            <div className="cart-total-price">${getTotalPrice()}</div>
-         </div> */}
-         <Button
-            className="cart-modal-btn"
-            type="primary"
-         >
-            <BagIcon size={20} />
-            <span style={{ marginLeft: 12 }}>Start Checkout</span>
-         </Button>
-      </>
+   	return (
+    	<>
+        	{bagItems.length === 0 ? (
+            	<h2 className="bagDetail__tips">無寶可夢被添加至背包</h2>
+         	) : (
+            	<Row gutter={[32, 32]} justify="space-around">
+					{bagItems.map(item => (
+						<Col 
+							key={bagItems.indexOf(item)}
+							sm={{ span: 12 }}
+							lg={{ span: 8 }} 
+							xl={{ span: 6 }}
+							xxl={{ span: 4 }}
+						>
+							<Card className="poke__card">
+								<div className="bagItem__wrap">
+									<Link to={`/poke/${item.id}`}>
+										<div className="bag__image" >
+											{item.shiny === "notshiny" ?(
+												<img 
+													src={item.image}
+													alt={item.name}
+													className="pokeCard__img"
+													style={{ width: '50%' }}
+												/>
+											) : (
+													<img
+														src={item.shinyimage}
+														alt={item.name}
+														className="pokeCard__img"
+														style={{ width: '50%' }}
+													/>
+												)
+											}
+										</div>
+									</Link>
+									<div className="pokeItem__info">
+										<h6 className="pokeItem__no">
+											#{item.no}
+										</h6>
+										{item.shiny === "notshiny" ?(
+											<h2 className="pokeItem__name" >{item.name}</h2>
+											) : (
+												<h2 className="pokeItem__name" >{item.name}（異色）</h2>
+												)
+										}
+										<div className="bagDetail__delete-wrap">
+											<div className="bagDetail__delete-btn" onClick={() => removeBagItem(dispatch, item, item.shiny)}>
+												x
+											</div>
+										</div>
+									</div>
+								</div>
+							</Card>
+						</Col>
+					))}
+            	</Row>
+         	)}
+      	</>
    );
 }

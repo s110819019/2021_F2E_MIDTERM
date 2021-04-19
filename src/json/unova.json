@@ -8,6 +8,10 @@
         "type1__class": "psychicType",
         "type2": "火",
         "type2__class": "fireType",
-        "image": "https://godex.site/imgs/pokemon/494.png"
+        "image": "https://godex.site/imgs/pokemon/494.png",
+        "shinyimage":"https://images.gameinfo.io/pokemon/256/494-00-shiny.webp",
+        "category": "勝利寶可夢",
+        "about": "如果分享到比克提尼產出的無限能量，全身就會充滿力量。",
+        "countInStock": 9
     }
 ]

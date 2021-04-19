@@ -8,7 +8,7 @@ const { Header, Content, Footer } = Layout;
 
 function PokeBag() {
     return (
-        <Layout className="container main-layout">
+        <Layout className="container layout__main">
             <Header className="layout__header">
             	<AppHeader />
             </Header>

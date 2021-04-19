@@ -436,3 +436,86 @@ span.hamMenu__bar4--touch {
     font-size: 2.4rem;
     color: #4d7072;
 }
+
+.pokeDetail__style-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-size: 2.4rem;
+    color: #1d8796;
+}
+
+.select__style {
+    font-size: 1.6rem;
+    color: #1d8796;
+}
+
+.pokeDetail__shiny {
+    margin-top: 1rem;
+}
+
+.pokeDetail__btn-toBag {
+    height: auto;
+    font-size: 2.4rem;
+    color: #e7f0e1;
+    background-color: #1d8796;
+    margin-top: 2rem;
+}
+
+.pokeDetail__btn-toBag:hover {
+    background-color: #1d8796;
+    opacity: 0.7;
+}
+
+.bagDetail__tips {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #1d8796;
+    margin-top: 10rem;
+}
+
+.bagDetail__delete-wrap {
+    color: #1d8796;
+}
+
+.bagDetail__delete-btn {
+    text-align: right;
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+
+.bagDetail__delete-btn:hover {
+    color: #fafafa;
+}
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #e7f0e1;
+    margin-top: 2rem;
+}
+
+.footer__hr--line {
+    background-color: #4d7072;
+    height: 0.2rem;
+    opacity: 0.2;
+    width: 90%;
+    margin-left: 5%;
+    border-radius: 2rem;
+}
+
+.footer__copyright {
+    color: #4d7072;
+}
+
+/* Bag Summary */
+.header__bag-summary-text {
+    color: #4d7072;
+}
+.header__bag-summary {
+    position: absolute;
+    right: 3rem;
+    cursor: pointer;
+}

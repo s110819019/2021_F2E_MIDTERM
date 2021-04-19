@@ -8,6 +8,10 @@
         "type1__class": "grassType",
         "type2": "",
         "type2__class": "noneType",
-        "image": "https://godex.site/imgs/pokemon/387.png"
+        "image": "https://godex.site/imgs/pokemon/387.png",
+        "shinyimage":"https://godex.site/imgs/pokemon/shiny387-m.png",
+        "category": "嫩葉寶可夢",
+        "about": "用全身進行光合作用，製造氧氣。當口渴的時候，頭上的葉子就會枯萎。",
+        "countInStock": 9
     }
 ]

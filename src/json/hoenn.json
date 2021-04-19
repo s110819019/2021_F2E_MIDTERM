@@ -8,6 +8,10 @@
         "type1__class": "grassType",
         "type2": "",
         "type2__class": "noneType",
-        "image": "https://godex.site/imgs/pokemon/252.png"
+        "image": "https://godex.site/imgs/pokemon/252.png",
+        "shinyimage":"https://godex.site/imgs/pokemon/shiny252-m.png",
+        "category": "林蜥寶可夢",
+        "about": "能夠用腳底的小刺鉤住垂直的牆壁攀爬。會甩動粗粗的尾巴擊打對手。",
+        "countInStock": 9
     }
 ]
