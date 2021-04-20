@@ -18,7 +18,7 @@ export default function CartModal() {
         	{bagItems.length === 0 ? (
             	<h2 className="bagDetail__tips">無寶可夢被添加至背包</h2>
          	) : (
-            	<Row gutter={[32, 32]} justify="space-around">
+            	<Row gutter={[32, 32]} >
 					{bagItems.map(item => (
 						<Col 
 							key={bagItems.indexOf(item)}

@@ -3,7 +3,7 @@ import PokeItem from "./PokeItem";
 
 export default function PokeList({pokes}) {
     return (
-        <Row gutter={[32, 32]} justify="space-around">
+        <Row gutter={[32, 32]} >
             {pokes.map(poke => (
                 <Col 
                     key={poke.id}
